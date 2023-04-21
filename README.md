@@ -29,7 +29,7 @@ We will create a separate file for HTML because a website always has a lot of HT
 
 > #### How to return an HTML file's content?
 >
-> 1. import the package `reder_template `
+> 1. import the package `render_template `
 > 2. modify the code `return "Hello Flask!"` to `return reder_template("index.html")`
 > 3. By default, Flask will find the file `index.html` in `./templates/`
 
