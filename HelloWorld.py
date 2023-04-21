@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -6,7 +6,7 @@ app = Flask(__name__)
 # 当用户访问此网址会自动执行对应函数
 @app.route("/show/info")
 def index():
-    return "Hello Flask!"
+    return render_template("index.html")
 
 if __name__ == '__main__':
     app.run()
